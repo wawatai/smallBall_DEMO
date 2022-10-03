@@ -1,0 +1,300 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+ 
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+blockquote, q {
+    quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+button {
+    cursor: pointer;
+    outline: none;
+    border: none;
+    padding: 0px;
+}
+
+select,input {
+    outline: none;
+}
+
+main {
+    display: block;
+}
+
+/*主體*/
+
+html {
+  font-family: Microsoft JhengHei;
+  width: 100%;
+  min-width: 1100px;
+  /* min-width: 980px; */
+  height: 100%;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  overflow-y: hidden;
+  background: #fde76b;
+}
+.container {
+  position: relative;
+  width: 100%;
+  height: 980px;
+  overflow: hidden;
+}
+.container .login {
+  position: relative;
+  width: 1020px;
+  height: 100%;
+  margin: 0 auto; 
+}
+
+/*logo*/
+
+.container .login .logo {
+  width: 494px;
+  height: 268px;
+  background: url(../images/logo.png) no-repeat;
+  background-size: 100%; 
+  position: absolute;
+  top: 33px;
+  left: -75px;
+}
+
+/*按鈕*/
+
+.container .login .btn_area {
+  position: absolute;
+  width: 420px;
+  height: auto;
+  top: 307px;
+  left: -12px;
+  z-index: 3;
+}
+.container .login .btn_area button {
+  width: 193px;
+  height: 50px;
+  border-radius: 5px;
+  border: solid 1px #ffffff;
+  border-bottom-width: 0px;
+  color: #fff;
+  font-weight: bold;
+  font-size: 20px;
+  box-shadow: 0px 2px 3px 2px #000000a8;
+  background-color: #d3921d; /* Old browsers */
+  background: linear-gradient(to top, #d3921d 0%,#744a00 9%,#ffd57a 17%,#d48b19 26%,#391500 41%,#d68f1d 72%,#fff2d5 85%,#e39f37 100%);
+}
+.container .login .btn_area button:hover,
+.container .login .newoldPage button:active,
+.container .login .newoldPage button.active {
+  background-color: #5a3f0f; /* Old browsers */
+  background: linear-gradient(to top, #fff2d6 0%,#dbc89e 18%,#5a3f0f 63%,#1b0a00 100%);
+}
+.container .login .btn_area button:last-of-type {
+  margin-left: 15px;
+}
+
+/*input*/
+
+.container .login .input-area {
+  position: absolute;
+  top: 398px;
+  left: -13px;
+  z-index: 3;
+}
+.container .login .input-area .login-input {
+  width: 246px;
+  vertical-align: middle;
+  text-align: right; 
+  float: left;
+}
+.container .login .input-area .login-input label input {
+  width: 100%;
+  height: 33px;
+  font-size: 19px;
+  padding-left: 3%;
+  box-sizing: border-box;
+  border-radius: 5px;
+  background-color: #000; /* Old browsers */
+  background: #000000c5;
+  border: solid 1px #fff;
+  box-shadow: 0px 0px 7px 0px #fff;
+  color: #fff;
+}
+.container .login .input-area .login-input label input::-webkit-input-placeholder {
+  color: #fff;
+}
+.container .login .input-area .login-input label input:first-of-type {
+  margin-bottom: 15px;
+}
+.container .login .input-area button {
+  width: 136px;
+  height: 76px;
+  border: 1px solid #fff;
+  border-bottom-width: 0px;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 20px;
+  font-weight: bold;
+  margin: 2px 0px 0px 24px;
+  box-shadow: 0px 3px 7px 1px #000000;
+  background: #d3921d; /* Old browsers */
+  background: linear-gradient(to top, #d3921d 0%,#744a00 9%,#ffd57a 17%,#d48b19 26%,#391500 41%,#d68f1d 72%,#fff2d5 85%,#e39f37 100%);
+  cursor: pointer;
+  float: left;
+  position: relative;
+  z-index: 3;
+}
+.container .login .input-area button:hover,
+.container .login .input-area button:active,
+.container .login .input-area button.active {
+  background: #a86608; /* Old browsers */
+  background: linear-gradient(to top, #fef1d3 0%,#ffcf6a 31%,#a86608 60%,#391500 100%);
+}
+.container .login .input-area.c {
+  top: 310px;
+}
+
+/*圖片*/
+
+.container .coins {
+  width: 999px;
+  height: 720px;
+  position: absolute;
+  top: 0;
+  right: -307px;
+  background: url(../images/leftImg.png) no-repeat;
+  background-size: 100%;
+  transform-origin: right top;
+  z-index: 2;
+  animation: coins 0.5s ease-out 0s;
+}
+.container .coins2 {
+  width: 1010px;
+  height: 575px;
+  position: absolute;
+  top: 83px;
+  right: -284px;
+  background: url(../images/leftImg2.png) no-repeat;
+  background-size: 100%;
+  z-index: 1;
+  animation: lag 0.3s linear 0s,coins2 0.2s ease-out 0.3s;
+}
+.container .coins2::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: url(../images/leftImg2.png) no-repeat;
+  background-size: 100%;
+  z-index: 1;
+  animation: lag 0.3s linear 0s,coins2-2 0.8s ease-out 0.3s;
+  opacity: 0;
+}
+
+/*背景*/
+
+.container .BG {
+  position: absolute;
+  top: 0;
+  background: url(../images/background.jpg) no-repeat top center;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  z-index: -999;
+}
+
+/*動畫*/
+
+@keyframes coins {
+  0% {
+    opacity: 0;
+    transform: scale(0);
+  }
+
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes coins2 {
+  0% {
+    opacity: 0;
+    transform: scale(0) translateY(50%);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}
+
+@keyframes coins2-2 {
+  0% {
+    opacity: 0;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.2);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(1.25);
+  }
+}
+
+@keyframes lag {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
