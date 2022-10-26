@@ -142,7 +142,7 @@ html {
 
 .container .login .input-area {
   position: absolute;
-  top: 419px;
+  top: 335px;
   right: -43px;
   z-index: 3;
 }
@@ -195,9 +195,9 @@ html {
   background: #a86608; /* Old browsers */
   background: linear-gradient(to top, #fef1d3 0%,#ffcf6a 31%,#a86608 60%,#391500 100%);
 }
-.container .login .input-area.c {
-  top: 310px;
-}
+/* .container .login .input-area.c {
+  top: 335px;
+} */
 
 /*圖片*/
 
