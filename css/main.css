@@ -96,18 +96,18 @@ html {
 /*logo*/
 
 .container .login .logo {
-  width: 446px;
-  height: 274px;
+  width: 342px;
+  height: 169px;
   background: url(../images/logo.png) no-repeat;
   background-size: 100%; 
   position: absolute;
-  top: 36px;
-  right: -73px;
+  top: 101px;
+  right: 22px;
 }
 
 /*按鈕*/
 
-.container .login .btn_area {
+/* .container .login .btn_area {
   position: absolute;
   width: 420px;
   height: auto;
@@ -125,25 +125,23 @@ html {
   font-weight: bold;
   font-size: 20px;
   box-shadow: 0px 2px 3px 2px #000000a8;
-  background-color: #d3921d; /* Old browsers */
   background: linear-gradient(to top, #d3921d 0%,#744a00 9%,#ffd57a 17%,#d48b19 26%,#391500 41%,#d68f1d 72%,#fff2d5 85%,#e39f37 100%);
 }
 .container .login .btn_area button:hover,
 .container .login .newoldPage button:active,
 .container .login .newoldPage button.active {
-  background-color: #5a3f0f; /* Old browsers */
   background: linear-gradient(to top, #fff2d6 0%,#dbc89e 18%,#5a3f0f 63%,#1b0a00 100%);
 }
 .container .login .btn_area button:last-of-type {
   margin-left: 15px;
-}
+} */
 
 /*input*/
 
 .container .login .input-area {
   position: absolute;
-  top: 310px;
-  right: -43px;
+  top: 324px;
+  right: -4px;
   z-index: 3;
 }
 .container .login .input-area .login-input {
@@ -159,14 +157,12 @@ html {
   padding-left: 3%;
   box-sizing: border-box;
   border-radius: 5px;
-  background-color: #000; /* Old browsers */
-  background: #000000c5;
-  border: solid 1px #fff;
-  box-shadow: 0px 0px 7px 0px #fff;
-  color: #fff;
+  background: #ffffff;
+  border: solid 1px #000000;
+  color: #000000;
 }
 .container .login .input-area .login-input label input::-webkit-input-placeholder {
-  color: #fff;
+  color: #000000;
 }
 .container .login .input-area .login-input label input:first-of-type {
   margin-bottom: 15px;
@@ -177,13 +173,12 @@ html {
   border: 1px solid #fff;
   border-bottom-width: 0px;
   border-radius: 5px;
-  color: #fff;
+  color: #6a1216;
   font-size: 20px;
   font-weight: bold;
   margin: 2px 0px 0px 24px;
   box-shadow: 0px 3px 7px 1px #000000;
-  background: #d3921d; /* Old browsers */
-  background: linear-gradient(to top, #d3921d 0%,#744a00 9%,#ffd57a 17%,#d48b19 26%,#391500 41%,#d68f1d 72%,#fff2d5 85%,#e39f37 100%);
+  background: linear-gradient(to top, #782900 0%,#d08f28 15%,#974e00 30%,#b05c01 37%,#fff7be 73%,#e9ae3a 95%,#b03d01 100%);
   cursor: pointer;
   float: left;
   position: relative;
@@ -192,8 +187,8 @@ html {
 .container .login .input-area button:hover,
 .container .login .input-area button:active,
 .container .login .input-area button.active {
-  background: #a86608; /* Old browsers */
-  background: linear-gradient(to top, #fef1d3 0%,#ffcf6a 31%,#a86608 60%,#391500 100%);
+  background: linear-gradient(to top, #fff7c4 0%,#e9ae3a 14%,#974e00 52%,#782900 75%,#461800 100%);
+  color: #ffffff;
 }
 /* .container .login .input-area.c {
   top: 335px;
@@ -202,27 +197,15 @@ html {
 /*圖片*/
 
 .container .coins {
-  width: 893px;
-  height: 792px;
+  width: 632px;
+  height: 530px;
   position: absolute;
-  top: 31px;
-  left: -143px;
+  top: 46px;
+  left: -10px;
   background: url(../images/leftImg.png) no-repeat;
   background-size: 100%;
   z-index: 2;
   animation: coins 0.5s ease-out 0s;
-}
-.container .coins2 {
-  width: 684px;
-  height: 612px;
-  position: absolute;
-  top: 0;
-  left: -244px;
-  background: url(../images/leftImg2.png) no-repeat;
-  background-size: 100%;
-  z-index: 1;
-  transform-origin: right;
-  animation: lag 0.1s linear 0s,coins2 0.6s ease-out 0.1s;
 }
 
 /*背景*/
@@ -242,46 +225,11 @@ html {
 @keyframes coins {
   0% {
     opacity: 0;
-    transform: translateX(-50%);
+    transform: translateY(-50%) scale(0);
   }
 
   100% {
     opacity: 1;
-    transform: translateX(0);
-  }
-}
-
-@keyframes coins2 {
-  0% {
-    opacity: 0;
-    transform: translateX(50%) scale(0) rotate(360deg);
-  }
-  100% {
-    opacity: 1;
-    transform: translateX(0) scale(1) rotate(0deg);
-  }
-}
-
-@keyframes coins2-2 {
-  0% {
-    opacity: 0;
-    transform: scale(1);
-  }
-  50% {
-    opacity: 1;
-    transform: scale(1.2);
-  }
-  100% {
-    opacity: 0;
-    transform: scale(1.25);
-  }
-}
-
-@keyframes lag {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 0;
+    transform: translateY(0) scale(1);
   }
 }
